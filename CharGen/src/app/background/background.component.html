@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="form-group">
+    <label for="name">Character Name:</label> <br>
+    <input type="text" class="form-control" id="name">
+  </div>
+
+  <div class="form-group">
+    <label for="concept">Character concept:</label><br>
+    <textarea rows="4" columns="70" class="form-control" id="concept"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age: </label>
+    <input type="number" class="form-control" id="age">
+  </div>
+
+  <div class="form-group">
+    <label for="splat">Splat</label>
+    <select class="form-control" id="splat" required>
+      <option *ngFor="let splato of Splats" [value]="splato">{{splato}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="virtue">Virtue</label>
+    <select class="form-control" id="virtue" required>
+      <option *ngFor="let boon of Virtues" [value]="boon">{{boon}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="vice">Vice</label>
+    <select class="form-control" id="vice" required>
+      <option *ngFor="let vice of Vices" [value]="vice">{{ vice }}</option>
+    </select>
+  </div>
+
+</div>
